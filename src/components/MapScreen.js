@@ -1,10 +1,11 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const MapScreen = () => {
+const MapScreen = ({route}) => {
+  const {city} = route.params;
   return (
     <View>
-      <Text>Map Screen</Text>
+      <Text>{city.name}</Text>
     </View>
   );
 };

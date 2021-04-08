@@ -16,7 +16,8 @@ const HomeScreen = () => {
         headerMode="screen"
         screenOptions={{
           headerTintColor: 'white',
-          headerStyle: {backgroundColor: 'green'},
+          headerTitleAlign: 'center',
+          headerStyle: {backgroundColor: '#00804A'},
         }}>
         <Stack.Screen
           name="List"
