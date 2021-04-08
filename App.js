@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 import {HomeScreen, SplashScreen} from './src/components';
 
@@ -17,9 +17,9 @@ const App = () => {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       {!timePass ? <SplashScreen /> : <HomeScreen />}
-    </SafeAreaView>
+    </View>
   );
 };
 
@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     display: 'flex',
-    alignItems: 'center',
     justifyContent: 'center',
   },
 });
